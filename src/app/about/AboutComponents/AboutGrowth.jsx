@@ -1,0 +1,93 @@
+import React from "react";
+
+const AboutGrowth = () => {
+  return (
+    <div className="Main fix12 py-16 lg:py-[100px]">
+      <div className="lg:flex items-center justify-between xl-1280:gap-[5%] xl-1024:gap-[30px]">
+        <div className="xl-1024:w-full xl:w-[521px] xl-1280:w-[50%] flex ">
+          <h1 className="text-[#092241] pb-2 text-3xl lg:text-6xl fpt-500 border-[#F7E327] border-b-[6px]">
+            Impact. Growth. Opportunity.
+          </h1>
+        </div>
+        <div className="xl:w-[612px] xl-1280:w-[50%] lg:h-[268px] md:flex  border-2 mt-5 lg:mt-0">
+          <div className="xl-1024:min-w-[190px] md:min-w-[292px]">
+            <img
+              src="./AboutPage/AboutGrowth/AboutGrowth-Sus.png"
+              alt=""
+              className="xl-1024:w-[190px] md:w-[292px] w-full  h-full object-cover"
+            />
+          </div>
+          <div className="max-w-fit py-[30px] px-[20px] flex flex-col justify-between">
+            <div className="">
+              <h1 className="text-2xl fsan-600 pb-4">Sustainability</h1>
+              <p className="text-[#565656] fsan-600 text-[20px] md:pb-0 pb-6">
+                Sustainabiliy at its core structured governance mechanism
+              </p>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <div className="w-[30px] h-[30px] bg-[#EEF0F3] rounded-full flex items-center justify-center">
+                <img src="./AboutPage/AboutGrowth/learnMore.svg" alt="" />
+              </div>
+              <p>Learn More</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="lg:flex items-center justify-between lg:pt-[65px] pt-5 xl-1280:gap-[5%] xl-1024:gap-[30px]">
+        <div className="xl:w-[612px] xl-1280:w-[50%] lg:h-[268px] md:flex  border-2  lg:mt-0">
+          <div className="xl-1024:min-w-[190px] md:min-w-[292px]">
+            <img
+              src="./AboutPage/AboutGrowth/AboutGrowth-Inves.png"
+              alt=""
+              className="xl-1024:w-[190px] md:w-[292px] w-full  h-full object-cover"
+            />
+          </div>
+          <div className="max-w-fit py-[30px] px-[20px] flex flex-col justify-between">
+            <div className="">
+              <h1 className="text-2xl fsan-600 pb-4">Investor Relations</h1>
+              <p className="text-[#565656] fsan-600 text-[20px]">
+                Investor Relations Having delivered over 4 million square feet
+                of high-quality.
+              </p>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <div className="w-[30px] h-[30px] bg-[#EEF0F3] rounded-full flex items-center justify-center">
+                <img src="./AboutPage/AboutGrowth/learnMore.svg" alt="" />
+              </div>
+              <p>Learn More</p>
+            </div>
+          </div>
+        </div>
+        <div className="xl:w-[612px] xl-1280:w-[50%] lg:h-[268px] md:flex  border-2 mt-5  lg:mt-0">
+          <div className="xl-1024:min-w-[190px] md:min-w-[292px]">
+            <img
+              src="./AboutPage/AboutGrowth/AboutGrowth-Careers.png"
+              alt=""
+              className="xl-1024:w-[190px] md:w-[292px] w-full  h-full object-cover"
+            />
+          </div>
+          <div className="max-w-fit py-[30px] px-[20px] flex flex-col justify-between">
+            <div className="">
+              <h1 className="text-2xl fsan-600 pb-4">Careers @KSH</h1>
+              <p className="text-[#565656] fsan-600 text-[20px]">
+                Sustainabiliy at its core structured governance mechanism
+              </p>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <div className="w-[30px] h-[30px] bg-[#EEF0F3] rounded-full flex items-center justify-center">
+                <img src="./AboutPage/AboutGrowth/learnMore.svg" alt="" />
+              </div>
+              <p>Learn More</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AboutGrowth;
