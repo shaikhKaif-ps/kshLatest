@@ -90,14 +90,24 @@ const SlideSection = () => {
 
           {/* Navigation Buttons */}
           <div className="flex items-center pt-[45px] px-[5%] md:px-0 md:w-[60%] justify-between pb-[70px]">
-            <div className="flex items-center gap-4 text-[#fff] text-[16px] group hover:translate-x-[5px] transition-transform duration-[400ms] cursor-pointer">
+            {/* <div className="flex items-center gap-4 text-[#fff] text-[16px] group hover:translate-x-[5px] transition-transform duration-[400ms] cursor-pointer">
               <img
                 src="/buttonarrows/redarico.svg"
                 className="group-hover:rotate-0 group-hover:scale-[120%] transition-transform duration-[400ms] ease-in-out  h-10 w-10 rotate-45 hover:rotate-0 cursor-pointer"
                 alt=""
               />
               Explore Careers
-            </div>
+            </div> */}
+            <button className="flex group hover:translate-x-[5px] transition-transform duration-[400ms] items-center justify-center gap-3">
+              <img
+                src="/buttonarrows/redarico.svg"
+                width={0}
+                height={0}
+                className="h-10 w-10 rotate-45 group-hover:rotate-0 group-hover:scale-[120%] transition-transform duration-300 cursor-pointer"
+                alt="Red Arrow Icon"
+              />
+              <p className="text-[#ffffff] fsans-600">Explore More</p>
+            </button>
 
             <div className="flex gap-2 items-center">
               <button

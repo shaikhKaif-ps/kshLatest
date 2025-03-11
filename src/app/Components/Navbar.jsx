@@ -204,16 +204,17 @@ const Navbar = () => {
               "Career",
               "Contact",
             ].map((item, index) => (
-              <motion.p
+              <motion.a
                 key={index}
-                className="fsans-600 text-white"
+                className="fsans-600 text-white cursor-pointer"
                 variants={{
                   hidden: { opacity: 0, y: -20 },
                   visible: { opacity: 1, y: 0, transition: { duration: 0.2 } },
                 }}
+                href={item}
               >
                 {item}
-              </motion.p>
+              </motion.a>
             ))}
           </motion.div>
 

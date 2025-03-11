@@ -9,7 +9,7 @@ const ButtomComp = () => {
       transition={{ duration: 1.2, ease: [0.7, 0, 0.4, 1], delay: 0.5 }}
       viewport={{ once: true, amount: 0.1 }}
     >
-      <button className="flex items-center justify-center hover:translate-x-[5px] transition-transform duration-[400ms] gap-3 group">
+      {/* <button className="flex items-center justify-center hover:translate-x-[5px] transition-transform duration-[400ms] gap-3 group">
         <Image
           src="/buttonarrows/redarico.svg"
           width={0}
@@ -18,6 +18,17 @@ const ButtomComp = () => {
           alt="Red Arrow Icon"
         />
         <p className="text-[#092241] fsans-600">Learn More About KSH Infra</p>
+      </button> */}
+
+      <button className="flex group hover:translate-x-[5px] transition-transform duration-[400ms] items-center justify-center gap-3">
+        <img
+          src="/buttonarrows/redarico.svg"
+          width={0}
+          height={0}
+          className="h-10 w-10 rotate-45 group-hover:rotate-0 group-hover:scale-[120%] transition-transform duration-300 cursor-pointer"
+          alt="Red Arrow Icon"
+        />
+        <p className="text-[#ffffff] fsans-600">Explore More</p>
       </button>
     </motion.div>
   );

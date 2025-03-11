@@ -28,7 +28,7 @@ const MapSC = ({ parkimg, title, city, tarea, tbuild }) => {
             </div>
           </div>
         </div>
-        <div className="flex group hover:translate-x-[5px] transition-transform duration-[400ms] items-center gap-4 text-[#fff] text-[16px] absolute bottom-[6px]">
+        {/* <div className="flex group hover:translate-x-[5px] transition-transform duration-[400ms] items-center gap-4 text-[#fff] text-[16px] absolute bottom-[6px]">
           <a href="#" className="flex gap-[13px] items-center duration-[400ms]">
             <img
               src="/buttonarrows/redarico.svg"
@@ -37,7 +37,17 @@ const MapSC = ({ parkimg, title, city, tarea, tbuild }) => {
             />
             Explore Park
           </a>
-        </div>
+        </div> */}
+        <button className="flex group hover:translate-x-[5px] transition-transform duration-[400ms] items-center justify-center gap-3">
+          <img
+            src="/buttonarrows/redarico.svg"
+            width={0}
+            height={0}
+            className="h-10 w-10 rotate-45 group-hover:rotate-0 group-hover:scale-[120%] transition-transform duration-300 cursor-pointer"
+            alt="Red Arrow Icon"
+          />
+          <p className="text-[#ffffff] fsans-600">Explore More</p>
+        </button>
       </div>
     </>
   );
