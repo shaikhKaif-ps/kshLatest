@@ -38,7 +38,7 @@ const InvesterCase = () => {
         </div>
       </div>
       {/* ---------- */}
-      {/* <div className="bg-[#EEF0F3] py-16">
+      <div className="bg-[#EEF0F3] py-16">
         <div className="fix12  ">
           <div className="flex justify-between items-center gap-10 flex-row-reverse">
             <div className="leftCon w-[500px] h-[480px] bg-red-500 flex-shrink-0">
@@ -65,9 +65,9 @@ const InvesterCase = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       {/* ---------- */}
-      {/* <div className="bg-[#092241] py-16">
+      <div className="bg-[#092241] py-16">
         <div className="fix12  ">
           <div className="flex justify-between items-center gap-10">
             <div className="leftCon w-[500px] h-[480px] bg-red-500 flex-shrink-0">
@@ -94,9 +94,9 @@ const InvesterCase = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       {/* ---------- */}
-      {/* <div className="bg-[#EEF0F3] py-16">
+      <div className="bg-[#EEF0F3] py-16">
         <div className="fix12  ">
           <div className="flex justify-between items-center gap-10 flex-row-reverse">
             <div className="leftCon w-[500px] h-[480px]  flex-shrink-0">
@@ -123,7 +123,7 @@ const InvesterCase = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };
