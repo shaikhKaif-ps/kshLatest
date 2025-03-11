@@ -196,17 +196,17 @@ const Navbar = () => {
         >
           <motion.div className="flex justify-start items-center gap-[42px] mr-[23px]">
             {[
-              "About",
-              "Parks",
-              "Capabilities",
-              "Sustainability",
-              "Investor",
-              "Career",
-              "Contact",
+              "about",
+              "parks",
+              "capabilities",
+              "sustainability",
+              "investor",
+              "career",
+              "contact",
             ].map((item, index) => (
               <motion.a
                 key={index}
-                className="fsans-600 text-white cursor-pointer"
+                className="fsans-600 text-white cursor-pointer capitalize"
                 variants={{
                   hidden: { opacity: 0, y: -20 },
                   visible: { opacity: 1, y: 0, transition: { duration: 0.2 } },

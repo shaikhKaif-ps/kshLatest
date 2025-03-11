@@ -88,17 +88,20 @@
 // export default A;
 
 import React from "react";
+import NewUsp from "../Components/USP/NewUSP";
 import TimeLine from "./TimeLine";
 import Aniamtion from "./Aniamtion";
 import Animation from "./Aniamtion";
 import TestUsp from "./TestUsp";
+import ParkInsideSlider from "./testUsp/ParkInsideSlider";
 
 const page = () => {
   return (
     <div>
       {/* <TimeLine /> */}
-      <TestUsp />
+      {/* <NewUsp /> */}
       {/* <Animation /> */}
+      <ParkInsideSlider />
     </div>
   );
 };

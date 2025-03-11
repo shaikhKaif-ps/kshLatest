@@ -14,38 +14,43 @@ const InvesterSec2 = () => {
         </h1>
         <div className=" flex flex-col lg:flex-row justify-between gap-[20px] lg:gap-[5%] pt-[30px]">
           <div className="flex-1  xl:w-[538px] xl:min-h-[540px] ">
-            <div className="text-[#434343] text-base flex flex-col justify-between  gap-3">
+            <div className="text-[#434343] text-base leading-[26px] fsans-400 flex flex-col justify-between  gap-3">
               <p>Transformative Infra Solutions that Accelerate Growth. </p>
               <p>
                 {" "}
-                Having delivered over 4 million square feet of high-quality
-                industrial and logistical assets, KSH INFRA is on a steady
-                trajectory of expansion across key Indian markets with a
-                targeted development of 10 million square feet over the next 5
-                years.
+                We have delivered over 4 million square feet of warehousing and
+                industrial infrastructure to leading global multinational
+                companies, such as Kawasaki Motors, Jabil, Faurecia, Gedia,
+                Rieter, Linamar, Saleri, Kimberly Clark among several others.
               </p>
               <p>
                 {" "}
-                We construct industrial and logistics parks that are greener,
-                leaner, and more efficient. KSH believes in minimizing
-                environmental impact and surrounding community stress induced by
-                infrastructure development.
+                This has been made possible by the support we have garnered from
+                our marquee global investors such as the Pacific Century Group
+                of Hong Kong, Morgan Stanley Real Estate Investing (MSREI) of
+                the USA, and Mapletree Investments of Singapore.
               </p>
               <p>
                 {" "}
-                The design and construction of high-quality energy- and
-                resource-efficient industrial infrastructure stem from KSH INFRA
-                core philosophy—Inspiring a green industrial future by driving
-                sustainability and accelerating impact. We have time and again
-                demonstrated how critical your successes are to us by ensuring
-                long-term savings and timely delivery of complex projects.
+                With our recent Joint Venture Agreement with Indospace Capital
+                to develop 10 million square feet of industrial infrastructure
+                across key markets in India, we are stated to become the
+                preferred partners to companies expanding their footprint in
+                manufacturing, e-commerce, logistics, and several other domains.
+              </p>
+              <p>
+                {" "}
+                Chakan Park III and all future projects will go through a
+                stringent process of innovation and improvement to achieve IGBC
+                Platinum certification, setting the benchmark for eco-conscious
+                green industrial infrastructure projects.
               </p>
             </div>
           </div>
 
           <div className="flex-1 xl:flex-none  xl:w-[640px] xl:min-h-[540px] bg-yellow-300 ">
             <img
-              src="/AboutPage/aboutUsSec2.png"
+              src="./investorRel/InvesSpotSec2.png"
               className="w-full h-full object-cover"
               alt=""
             />

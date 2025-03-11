@@ -268,8 +268,8 @@ const Landing = ({ isActive }) => {
             className="fpt-600 xl:text-[56px] lg:text-[40px] md:text-[32px] text-[20px] text-white border-b-[5px] md:border-b-[10px] border-[#F7E327] leading-[150%] md:leading-[105%] pb-5 2xl:text-[70px]"
             variants={fadeIn2}
           >
-            Delivering <br className="md:flex hidden" />
-            Grade A Industrial <br className="md:flex hidden" />& Logistics
+            Delivering <br className="xl-1920:flex hidden" />
+            Grade A Industrial <br className="xl-1920:flex hidden" />& Logistics
             Parks
           </motion.h1>
           <motion.p
