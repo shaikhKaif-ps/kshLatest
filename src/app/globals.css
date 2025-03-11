@@ -342,6 +342,16 @@ h6:not(.linehead-text) {
   background-position: center;
 }
 
+.bgSusDown {
+
+  background-image: url('../../public/Sustainability//SustainabilitySec3Bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .xyz {
+/* background-position: center; */
+/* } */
 
 /*  */
 .countersec {
@@ -720,6 +730,11 @@ span.park_name {
   transition-timing-function: cubic-bezier(0.7, 0, 0.4, 1) !important;
 }
 
+/* @media (max-width: 1023px) {
+  .customsw {
+    width: 100%;
+  }
+} */
 
 .navbtn:not(:first-child) {
   border-left: rgba(215, 215, 215, 0.34) 1px solid;

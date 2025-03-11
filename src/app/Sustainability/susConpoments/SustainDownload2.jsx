@@ -4,28 +4,28 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { motion, AnimatePresence } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";
-
 const SustainDownload2 = () => {
-  const tabsData = [
+  const tabs = [
     {
-      title: "IGBC",
+      id: 1,
       heading: "IGBC Certification",
-      description:
-        "The vision of the Indian Green Building Council (IGBC)—a part of the Confederation of Indian Industry (CII)—is to enable a sustainably built environment for all. KSH INFRA Chakan Park II Industrial park is going through a stringent process of innovation and improvement to achieve IGBC Platinum certification, the recognized standard of green infrastructure.",
-      image: "/Slideimgs/IGBC.png",
+      title: "IGBC",
+      content:
+        "IGBC certification ensures eco-friendly construction and promotes sustainability in the real estate sector.",
+      image: "./Sustainability/sustainDowloadLSlides/IGBC.png",
     },
     {
-      title: "EDGE",
+      id: 2,
       heading: "EDGE Certification",
-      description:
-        "EDGE is a green building certification system focused on making buildings more resource-efficient. KSH INFRA Chakan Park II is implementing sustainable practices to achieve EDGE certification, ensuring energy efficiency and cost savings for industrial development.",
-      image: "/Slideimgs/EDGE.png",
+      title: "EDGE",
+      content:
+        "EDGE certification helps buildings become more resource-efficient with sustainable design principles.",
+      image: "/Sustainability/sustainDowloadLSlides/IGBC.png",
     },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef(null);
-
   // Handle tab click (updates both tab and slide)
   const handleTabClick = (index) => {
     if (index !== activeIndex) {
@@ -35,42 +35,42 @@ const SustainDownload2 = () => {
       }
     }
   };
-
   // Handle navigation
   const handleNext = () => {
-    if (swiperRef.current && activeIndex < tabsData.length - 1) {
+    if (swiperRef.current && activeIndex < tabs.length - 1) {
       setActiveIndex(activeIndex + 1);
       swiperRef.current.slideNext();
     }
   };
-
   const handlePrev = () => {
     if (swiperRef.current && activeIndex > 0) {
       setActiveIndex(activeIndex - 1);
       swiperRef.current.slidePrev();
     }
   };
-
   return (
     <div
-      className="h-auto lg:h-[690px] flex overflow-hidden"
+      className="h-auto lg:h-[610px] flex overflow-hidden"
       style={{
-        background: "linear-gradient(to bottom, #ffffff 50%, #092241 50%)",
+        backgroundImage:
+          "linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, white 50%), url('/Sustainability/SustainabilitySec3Bg.png')",
+        backgroundSize: "100% 100%",
       }}
     >
-      <div className="relative h-fit lg:h-[596px] flex lg:flex-row flex-col overflow-hidden w-full">
+      <div className="relative h-fit lg:h-[596px] flex lg:flex-row flex-col overflow-hidden  w-[100%] xl-1920:mr-[17.4%] xl-1600:mr-[172px] xl-1536:mr-[140px] xl-1440:mr-[94px] xl-1366:mr-[66px] xl-1280:mr-[62px]">
         {/* Left Section */}
-        <div className="leftCon bg-[#141D28] w-full lg:w-[60%] px-[5%]">
+        <div className="leftCon bg-[#141D28] w-full lg:w-[60%] xl-1920:pl-[21%] xl-1600:pl-[174px] xl-1536:pl-[140px] xl-1440:pl-[90px] xl-1366:pl-[70px] xl-1280:pl-[64px] xl-1024:pl-[50px] xl-768:pl-[40px]">
           {/* Heading & Tabs */}
-          <div className="md:flex items-center justify-between pt-[70px] border-b-[1px] pb-3 border-[#D7D7D7] border-opacity-50">
+
+          <div className="px-[5%] md:px-0 md:flex items-center justify-between xl-1024:w-[90%] xl-768:pr-[40px] lg:w-[600px] pt-[70px] border-b-[1px] pb-3 border-[#D7D7D7] border-opacity-50 xl-1920:w-[80%]">
             <h1 className="text-xl pb-4 md:pb-0 text-white font-semibold">
               Certifications
             </h1>
             {/* Tabs */}
             <div className="tabs flex gap-4">
-              {tabsData.map((tab, index) => (
+              {tabs.map((tab, index) => (
                 <button
-                  key={tab.title}
+                  key={index}
                   className={`px-3 h-[46px] border-[#D7D7D7] border-opacity-50 border-[2px] text-white rounded-[10px] ${
                     activeIndex === index
                       ? "bg-red-700 border-red-700"
@@ -85,7 +85,7 @@ const SustainDownload2 = () => {
           </div>
 
           {/* Animated Content Section */}
-          <div className="relative w-full h-[300px] xl-1024:h-[350px] overflow-hidden">
+          <div className="relative w-full h-[250px] md:h-[300px] xl-1024:h-[350px] overflow-hidden px-[5%] md:px-0">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeIndex}
@@ -93,24 +93,23 @@ const SustainDownload2 = () => {
                 animate={{ x: 0, opacity: 1 }}
                 exit={{ x: -500, opacity: 0 }}
                 transition={{ duration: 0.6, ease: [0.7, 0, 0.4, 1] }}
-                className="absolute text-white"
+                className="absolute text-white "
               >
-                <h1 className="text-3xl md:text-6xl font-medium border-b-[8px] border-[#F7E327] w-fit pb-3 pt-16">
-                  {tabsData[activeIndex].heading}
+                <h1 className="text-3xl md:text-6xl font-medium border-b-[8px] border-[#F7E327] w-fit pb-3 pt-7 md:pt-16">
+                  {tabs[activeIndex].heading}
                 </h1>
                 <p className="md:w-[60%] pt-6 md:pt-12 md:pb-12 text-base text-[#6C8DAB]">
-                  {tabsData[activeIndex].description}
+                  {tabs[activeIndex].content}
                 </p>
               </motion.div>
             </AnimatePresence>
           </div>
-
           {/* Navigation Buttons */}
-          <div className="flex items-center pt-[45px] justify-between pb-[70px]">
+          <div className="flex items-center md:pt-[45px] px-[5%] md:px-0 md:w-[60%] justify-between md:pb-[70px] pb-7">
             <div className="flex items-center gap-4 text-[#fff] text-[16px] group hover:translate-x-[5px] transition-transform duration-[400ms] cursor-pointer">
               <img
                 src="/buttonarrows/redarico.svg"
-                className="group-hover:rotate-0 group-hover:scale-[120%] transition-transform duration-[400ms] ease-in-out h-10 w-10 rotate-45 hover:rotate-0 cursor-pointer"
+                className="group-hover:rotate-0 group-hover:scale-[120%] transition-transform duration-[400ms] ease-in-out  h-10 w-10 rotate-45 hover:rotate-0 cursor-pointer"
                 alt=""
               />
               Explore Careers
@@ -125,12 +124,12 @@ const SustainDownload2 = () => {
                 <img className="h-10 w-10" src="/landingr.svg" alt="" />
               </button>
               <div className="text-base text-[#6C8DAB]">
-                {activeIndex + 1} / {tabsData.length}
+                {activeIndex + 1} / {tabs.length}
               </div>
               <button
                 className="w-10 h-10 flex items-center justify-center disabled:opacity-50"
                 onClick={handleNext}
-                disabled={activeIndex === tabsData.length - 1}
+                disabled={activeIndex === tabs.length - 1}
               >
                 <img className="h-10 w-10" src="/landingl.svg" alt="" />
               </button>
@@ -139,25 +138,30 @@ const SustainDownload2 = () => {
         </div>
 
         {/* Right Section (Swiper) */}
-        <div className="rightCon w-full lg:w-[40%] h-full bg-green-500 CertificationsRigthImgBg">
-          <Swiper
-            onSwiper={(swiper) => (swiperRef.current = swiper)}
-            onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-          >
-            {tabsData.map((tab) => (
-              <SwiperSlide key={tab.title}>
-                <img
-                  src={tab.image}
-                  alt={tab.title}
-                  className="max-w-none w-full"
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+        <div className="rightCon w-full lg:w-[40%] h-full CertificationsRigthImgBg">
+          <div className="flex items-center justify-center h-full">
+            <Swiper
+              onSwiper={(swiper) => (swiperRef.current = swiper)}
+              onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+            >
+              {tabs.map((tab) => (
+                <SwiperSlide key={tab} className="">
+                  <img
+                    src={tab.image}
+                    alt={tab}
+                    className="max-w-none w-full xl-768:w-auto xl-1440:w-auto xl-1366:w-auto xl-1280:w-auto "
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
         </div>
       </div>
     </div>
   );
 };
-
 export default SustainDownload2;
+// xl-1440:pl-[90px] xl-1536:pl-[138px] xl-1600:pl-[170px]
+
+//  xl-1024:mr-[60px] xl-1280:mr-[75px] xl-1366:mr-[70px] xl-1440:mr-[105px] xl-1536:mr-[155px] xl-1600:mr-[] xl-1920:mr-[]
+// image: "Sustainability/sustainDowloadLSlides/IGBC.png",

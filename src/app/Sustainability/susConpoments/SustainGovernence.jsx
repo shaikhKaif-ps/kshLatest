@@ -26,7 +26,6 @@ const SustainGovernence = () => {
   ];
 
   const toggleAccordion = (index) => {
-    // Ensure that one accordion is always open
     if (openIndex !== index) {
       setOpenIndex(index);
     }
@@ -42,12 +41,12 @@ const SustainGovernence = () => {
         </div>
 
         {/* Accordion Content */}
-        <div className="flex justify-between max-w-screen xl-1280:gap-14  ">
+        <div className="flex justify-between max-w-screen xl-1280:gap-14">
           <div className="w-[90%] mx-auto left min-1024:w-auto min-1024:mx-0">
             {accordionData.map((item, index) => (
               <div
                 key={index}
-                className="xl-1024:w-[450px] xl:w-[525px]  max-w-full border-[#D7D7D7] border-b-[1px] border-opacity-35"
+                className="xl-1024:w-[450px] xl:w-[525px] max-w-full border-[#D7D7D7] border-b-[1px] border-opacity-35"
               >
                 <div
                   className="flex items-center justify-between cursor-pointer"
@@ -65,20 +64,26 @@ const SustainGovernence = () => {
                     alt=""
                   />
                 </div>
-                {openIndex === index && (
+                <div
+                  className={`overflow-hidden transition-all duration-700 ease-in-out ${
+                    openIndex === index
+                      ? "max-h-[300px] opacity-100 transform translate-y-0 scale-100"
+                      : "max-h-0 opacity-0 transform -translate-y-2 scale-95"
+                  }`}
+                >
                   <p className="text-[#6C8DAB] fsans-400 text-base pt-3 pb-5">
                     {item.content}
                   </p>
-                )}
+                </div>
               </div>
             ))}
           </div>
 
-          {/* Dynamic Image Change */}
+          {/* Dynamic Image Change with Fade-in Effect */}
           <div className="hidden lg:block right">
             <img
               src={accordionData[openIndex]?.image}
-              className="xl-1024:w-[475px]"
+              className="xl-1024:w-[475px] transition-opacity duration-1000 ease-in-out opacity-100"
               alt="Accordion Image"
             />
           </div>

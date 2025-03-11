@@ -1,5 +1,6 @@
 import React from "react";
-import LineHead from "@/app/Components/Heading/LineHead";
+// import LineHead from "@/app/Components/Heading/LineHead";
+import LineHead from "../../Components/Heading/LineHead";
 const ParkOverview = () => {
   return (
     <div

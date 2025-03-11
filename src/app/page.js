@@ -1,11 +1,11 @@
-import Landing from "@/app/Components/Landing";
 import About from "./Components/About";
 import Esg from "./Components/Esg";
 import Parent from "./Components/CNPO/Parent";
 import TS from "./Components/TabSlider/TS";
 import TrustedPartners from "./Components/TrustedPartners";
-import Usp from "./Components/USP/Usp";
 import PFetch from "./Components/CNPO/PFetch";
+import NewUSP from "./Components/USP/NewUSP";
+import Usp from "./Components/USP/Usp";
 import LandingSwiper from "./Components/LandingSwiper";
 import Capabilities from "./Components/Capability";
 import SlideSection from "./Components/SlideSection";
@@ -17,7 +17,7 @@ export default function Home() {
       <LandingSwiper />
       <About />
       <Capabilities />
-      <Usp />
+      <NewUSP />
       <PFetch />
       <TrustedPartners />
       <Esg />

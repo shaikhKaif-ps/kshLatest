@@ -94,7 +94,7 @@ const Capabilities = () => {
     <div className="bg-[#092241] ">
       <div className="bg-[#092241] md:h-auto h-fit flex items-end justify-end">
         <div className="border-white w-full  maxTab xl-1024:ml-[44px] xl-1280:ml-[59px] xl-1366:ml-[60px] xl-1440:ml-[90px] xl-1536:ml-[137px] xl-1600:ml-[175px] xl-1920:ml-[17.5%]  lg:pb-0 pb-[100px] lg:gap-0 gap-[50px] flex lg:flex-row flex-col overflow-hidden">
-          <div className="leftCon flex-1 max-h-[600px] ">
+          <div className="leftCon flex-1 max-h-[600px]  ">
             <div className="pt-[40px]">
               <LineHead
                 heading="Our Capabilities"
@@ -121,21 +121,21 @@ const Capabilities = () => {
               ))}
             </div>
             {/* Animated Content Section */}
-            <div className="w-full max-h-500px min-h-500px pt-[30px] xl:pt-0">
+            <div className="w-full pt-[30px] xl:pt-0">
               <motion.div
                 key={activeTab} // Re-render on tab change
                 initial={{ x: 500, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 // exit={{ x: -1000, opacity: 0 }}
                 transition={{ duration: 0.6, ease: [0.7, 0, 0.4, 1] }}
-                className="w-[516px] xl-1024:w-[400px] contentArea"
+                className="w-[516px] xl-1024:w-[400px] contentArea xl-768:w-full"
               >
-                <div className="flex flex-col justify-between min-1440:justify-around xl-1280:h-[350px]  xl-1366:h-[300px]  w-[516px] xl-1024:w-[400px] contentArea xl-1024:h-[350px] h-[250px] xl-768:h-auto xl-768:gap-10 xl-1440:h-[385px] min-1440:h-[390px] ">
-                  <h1 className="tabHeading text-4xl md:text-5xl lg:text-[60px] fpt-500 text-white font-medium border-b-[8px] border-[#F7E327] ]">
+                <div className="flex flex-col  xl:pt-10 gap-7 xl-1280:h-[350px]  xl-1366:h-[300px] xl-768:w-full  w-[516px] xl-1024:w-[400px] contentArea xl-1024:h-[300px] h-[250px] xl-768:h-auto xl-768:gap-10 xl-1440:h-[385px] min-1440:h-[390px] ">
+                  <h1 className="tabHeading text-4xl md:text-[40px] md:leading-[50px] lg:text-[60px] fpt-500 text-white font-medium border-b-[8px] border-[#F7E327] ]">
                     {tabs[activeTab].heading}
                     {/* dangerouslySetInnerHTML= {{ __html: tabs[activeTab].heading }} */}
                   </h1>
-                  <p className="tabContent text-xl gradinetText">
+                  <p className="tabContent text-xl gradinetText xl-1024:text-lg">
                     {tabs[activeTab].content}
                   </p>
                 </div>
@@ -143,7 +143,7 @@ const Capabilities = () => {
             </div>
 
             {/* Navigation Buttons */}
-            <div className="flex items-center pt-[35px] xl:w-[60%] xl-1280:w-[80%] xl-1024:w-[90%] xl-1440:w-[90%] md:w-[70%] w-[100%] justify-between">
+            <div className="flex items-center xl-1366:pt-20 pt-[35px] xl:w-[60%] xl-1280:w-[80%] xl-1024:w-[90%] xl-1440:w-[90%] md:w-[100%] w-[100%] justify-between">
               <div className="flex items-center gap-4 text-[#fff] text-[16px] group hover:translate-x-[5px] transition-transform duration-[400ms] cursor-pointer">
                 <img
                   src="/buttonarrows/redarico.svg"

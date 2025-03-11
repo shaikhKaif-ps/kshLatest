@@ -17,7 +17,7 @@ const BentoSlider = () => {
         <div className="flex flex-col gap-[30px] sm:gap-[98px] md:pb-[85px] relative">
           <BentoHeader />
           {/* Navigation Buttons */}
-          <div className="absolute top-[15.8%] sm:top-[40%] lg:top-[44%] right-0 z-10">
+          <div className="absolute top-[16.1%] sm:top-[40%] lg:top-[44%] right-0 z-10">
             <div className="flex items-center gap-[14px]">
               <button className="swiper-button-prev-landing">
                 <img className="w-10 h-10" src="/landingr.svg" alt="Previous" />

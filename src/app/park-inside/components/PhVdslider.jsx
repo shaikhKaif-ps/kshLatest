@@ -94,7 +94,8 @@
 
 "use client";
 import { useEffect, useRef } from "react";
-import GenLineHead from "@/app/Components/Heading/GenLineHead";
+// import GenLineHead from "./app/Components/Heading/GenLineHead";
+import GenLineHead from "../../Components/Heading/GenLineHead";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation } from "swiper/modules";
 import "swiper/css";

@@ -73,7 +73,7 @@ const Usp = () => {
             ></video>
           </div>
           <div className="xl:w-full mx-auto flex flex-col h-fit max-w-full justify-center items-start gap-[33px] lg:pb-[110px] xl:pl-[565px]">
-            <motion.div className="flex sm:flex-row flex-col sm:items-center items-start justify-start gap-[20px] sm:gap-[92px] xl-1024:mr-[50px] xl-1280:mr-[59px] xl-1366:mr-[55px] xl-1600:mr-[171px] xl-1536:mr-[145px] xl-1440:mr-[90px] xl-1920:mr-[29%]">
+            <motion.div className="flex sm:flex-row flex-col sm:items-center items-start justify-start gap-[20px] sm:gap-[92px] xl:w-auto  xl-1024:mr-[50px] xl-1280:mr-[59px] xl-1366:mr-[55px] xl-1600:mr-[171px] xl-1536:mr-[145px] xl-1440:mr-[90px] xl-1920:mr-[29%]">
               <p className="fsans-400 text-[18px] leading-[26px] text-[#6C8DAB] z-[1]">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
                 aliquid quas sapiente quaerat eligendi voluptatum necessitatibus

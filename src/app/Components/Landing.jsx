@@ -255,7 +255,7 @@ const Landing = ({ isActive }) => {
       animate={isActive ? "visible" : "hidden"}
       exit="exit"
     >
-      <div className="fix12 flex items-center lg:justify-center justify-end xl-1920:max-h-fit h-screen py-[50px] md:py-[92px] xl:gap-[100px] md:gap-[50px] gap-[20px] md:flex-row flex-col-reverse">
+      <div className="fix12 flex items-center lg:justify-center justify-end xl-1920:max-h-fit h-screen pb-[75px] pt-[0px] md:py-[92px] xl:gap-[100px] md:gap-[50px] gap-[20px] md:flex-row flex-col-reverse">
         {/* Left Side Content */}
         <motion.div
           className="flex flex-col flex-1 max-w-full gap-5 xl:gap-10 xl:flex-[1] lg:h-[450px] justify-center"
@@ -305,7 +305,7 @@ const Landing = ({ isActive }) => {
 
         {/* Right Side Image */}
         <motion.div
-          className="md:min-h-screen flex-1 flex flex-col justify-end items-end"
+          className="md:min-h-screen min-h-fit h-fit flex-1 flex flex-col justify-end items-end"
           variants={fadeIn}
           initial="hidden"
           animate={isActive ? "visible" : "hidden"}
@@ -338,7 +338,7 @@ const Landing = ({ isActive }) => {
               exit="exit"
             >
               <motion.img
-                src="/landingph.png"
+                src="/landingph.jpg"
                 className="object-cover md:hidden inline-block"
                 alt="some"
                 variants={fadeIn}

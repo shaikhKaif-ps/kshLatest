@@ -3,7 +3,7 @@ import LineHead from "./Heading/LineHead";
 
 const Bento = ({}) => {
   return (
-    <div className="flex pt-[20px] sm:flex-row flex-col gap-[10px] items-center justify-between h-fit">
+    <div className="flex pt-0 md:pt-[20px] sm:flex-row flex-col gap-[10px] items-center justify-between h-fit">
       <div
         className={`h-[585px] md:hover:translate-y-[-20px] transition-[transform] duration-300 ease-in-out w-full sm:w-[33%] cursor-pointer xl:w-[385px] bg-[url(/bentobg1.png)] bg-cover bg-center flex flex-col justify-end  px-4 xl:px-[25px] pb-[50px] gap-[10px]`}
       >

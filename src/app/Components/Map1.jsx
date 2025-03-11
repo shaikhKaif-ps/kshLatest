@@ -59,7 +59,7 @@ const Map1 = () => {
         id: 1,
         park_no: "05",
         park_name: "Pune",
-        x: "44%",
+        x: "36%",
         y: "66%",
         scale: 2,
         translateX: -8,
@@ -69,7 +69,7 @@ const Map1 = () => {
         id: 2,
         park_no: "01",
         park_name: "Mumbai",
-        x: "46.5%",
+        x: "38.5%",
         y: "72.5%",
         scale: 2,
         translateX: -8,
@@ -80,7 +80,7 @@ const Map1 = () => {
         id: 3,
         park_no: "01",
         park_name: "Goa",
-        x: "48.5%",
+        x: "40.5%",
         y: "76%",
         scale: 2,
         translateX: -8,
@@ -168,10 +168,10 @@ const Map1 = () => {
 
   return (
     <div>
-      <div className="relative z-[10000000] fix12 ">
+      <div className="relative z-[10000000] fix12">
         <MapLineHead heading={"Explore Our Parks"} />
       </div>
-      <div className="hotspot-container mt-[-185px]" id="park_sec">
+      <div className="hotspot-container mt-[-185px] h-[900px]" id="park_sec">
         <div
           className="hotspot-map"
           style={{
@@ -182,7 +182,7 @@ const Map1 = () => {
             transition: "transform 1.5s ease-in-out",
           }}
         >
-          <img src="/indiamap.webp" alt="Map" className="map-image" />
+          <img src="/mapfinalimg.webp" alt="Map" className="map-image" />
 
           <div className="hotspot_col_one">
             {hotspots.map((hotspot) =>

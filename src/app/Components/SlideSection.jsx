@@ -73,12 +73,12 @@ const SlideSection = () => {
                 animate={{ x: 0, opacity: 1 }}
                 exit={{ x: -500, opacity: 0 }}
                 transition={{ duration: 0.6, ease: [0.7, 0, 0.4, 1] }}
-                className="absolute text-white "
+                className="text-white" // Removed "absolute"
               >
                 <h1 className="text-3xl md:text-6xl font-medium border-b-[8px] border-[#F7E327] w-fit pb-3 pt-16">
                   {tabs[activeIndex]}
                 </h1>
-                <p className="md:w-[60%] pt-6 md:pt-12 md:pb-12 text-base text-[#6C8DAB]">
+                <p className="md:w-[60%] max-w-full md:mx-0 mx-auto pt-6 md:pt-12 md:pb-12 text-base text-[#6C8DAB]">
                   Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                   eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut
                   enim ad minim veniam, quis nostrum exercitationem ullam
@@ -87,6 +87,7 @@ const SlideSection = () => {
               </motion.div>
             </AnimatePresence>
           </div>
+
           {/* Navigation Buttons */}
           <div className="flex items-center pt-[45px] px-[5%] md:px-0 md:w-[60%] justify-between pb-[70px]">
             <div className="flex items-center gap-4 text-[#fff] text-[16px] group hover:translate-x-[5px] transition-transform duration-[400ms] cursor-pointer">
