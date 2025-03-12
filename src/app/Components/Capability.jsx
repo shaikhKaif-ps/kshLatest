@@ -11,14 +11,14 @@ import LineHead from "./Heading/LineHead";
 const Capabilities = () => {
   const tabs = [
     {
-      title: "Capital Deployment",
+      title: "Land Acquisition",
       heading: (
         <>
-          Capital <br /> Deployment
+          Land <br /> Acquisition
         </>
       ),
       content:
-        "Capital Deployment Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.",
+        "We strategically identify and secure prime locations that offer optimal connectivity and growth potential, ensuring our industrial parks meet the logistical and operational needs of our clients.",
       images: {
         top: ["/OurCapabilities/dev_top1.png"],
         bottom1: ["/OurCapabilities/dev_bottom1_1.png"],
@@ -26,19 +26,41 @@ const Capabilities = () => {
       },
     },
     {
-      title: "Land Acquisition",
+      title: "Capital Deployment",
       heading: (
         <>
           {" "}
-          Land <br /> Acquisition{" "}
+          Capital <br /> Deployment{" "}
         </>
       ),
       content:
-        "Land Acquisition Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.",
+        "Our robust financial strategies and partnerships enable us to effectively allocate resources, facilitating the development of state-of-the-art infrastructure tailored to diverse industrial requirements.",
       images: {
         top: ["/OurCapabilities/top1.png"],
         bottom1: ["/OurCapabilities/bottom1_1.png"],
         bottom2: ["/OurCapabilities/bottom2_1.png"],
+      },
+    },
+    {
+      title: "Development ",
+      heading: <> Development</>,
+      content:
+        "From initial planning to final execution, our experienced team oversees every aspect of project development, ensuring timely delivery of high-quality, customizable industrial and warehousing facilities.",
+      images: {
+        top: ["/OurCapabilities/proTop.png"],
+        bottom1: ["/OurCapabilities/proBottom2.png"],
+        bottom2: ["/OurCapabilities/proBottom1.png"],
+      },
+    },
+    {
+      title: "Leasing ",
+      heading: <> Leasing </>,
+      content:
+        "We offer flexible leasing options, including built-to-suit and ready-to-move-in spaces, catering to the unique needs of businesses and ensuring a seamless operational setup.",
+      images: {
+        top: ["/OurCapabilities/proTop.png"],
+        bottom1: ["/OurCapabilities/proBottom2.png"],
+        bottom2: ["/OurCapabilities/proBottom1.png"],
       },
     },
     {
@@ -50,7 +72,7 @@ const Capabilities = () => {
         </>
       ),
       content:
-        "Property Management Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.",
+        "Our dedicated property management services ensure the continuous maintenance and operational efficiency of our parks, providing clients with a hassle-free experience and allowing them to focus on their core business activities.",
       images: {
         top: ["/OurCapabilities/proTop.png"],
         bottom1: ["/OurCapabilities/proBottom2.png"],
@@ -92,9 +114,11 @@ const Capabilities = () => {
   };
   return (
     <div className="bg-[#092241] ">
-      <div className="bg-[#092241] md:h-auto h-fit flex items-end justify-end">
-        <div className="border-white w-full  maxTab xl-1024:ml-[44px] xl-1280:ml-[59px] xl-1366:ml-[60px] xl-1440:ml-[90px] xl-1536:ml-[137px] xl-1600:ml-[175px] xl-1920:ml-[17.5%]  lg:pb-0 pb-[100px] lg:gap-0 gap-[50px] flex lg:flex-row flex-col overflow-hidden">
-          <div className="leftCon flex-1 max-h-[600px]  ">
+      {/* <div className="bg-[#092241] md:h-auto h-fit flex items-end justify-end"> */}
+      <div className="bg-[#092241] md:h-auto h-fit ">
+        {/* <div className="border-white w-full  maxTab xl-1024:ml-[44px] xl-1280:ml-[59px] xl-1366:ml-[60px] xl-1440:ml-[90px] xl-1536:ml-[137px] xl-1600:ml-[175px] xl-1920:ml-[17.5%]  lg:pb-0 pb-[100px] lg:gap-0 gap-[50px] flex lg:flex-row flex-col overflow-hidden"> */}
+        <div className="ml-[max(5%,calc((100vw-1250px)/2))] lg:gap-0 gap-[50px] flex lg:flex-row flex-col overflow-hidden">
+          <div className="leftCon flex-1 max-h-[600px] ">
             <div className="pt-[40px]">
               <LineHead
                 heading="Our Capabilities"
@@ -104,7 +128,7 @@ const Capabilities = () => {
               />
             </div>
             {/* Tabs */}
-            <div className="tabs flex flex-nowrap overflow-x-scroll overflow-y-hidden gap-4  xl-768:w-[95%] xl-1024:w-[90%] xl-1280:w-[90%] xl-1440:w-[90%]">
+            <div className="tabs flex flex-nowrap  overflow-x-scroll overflow-y-hidden gap-4  xl-768:w-[95%] xl-1024:w-[90%] min-1280:w-[90%]">
               {tabs.map((tab, index) => (
                 <button
                   key={tab.title}
@@ -130,8 +154,8 @@ const Capabilities = () => {
                 transition={{ duration: 0.6, ease: [0.7, 0, 0.4, 1] }}
                 className="w-[516px] xl-1024:w-[400px] contentArea xl-768:w-full"
               >
-                <div className="flex flex-col  xl:pt-10 gap-7 xl-1280:h-[350px]  xl-1366:h-[300px] xl-768:w-full  w-[516px] xl-1024:w-[400px] contentArea xl-1024:h-[300px] h-[250px] xl-768:h-auto xl-768:gap-10 xl-1440:h-[385px] min-1440:h-[390px] ">
-                  <h1 className="tabHeading text-4xl md:text-[40px] md:leading-[50px] lg:text-[60px] fpt-500 text-white font-medium border-b-[8px] border-[#F7E327] ]">
+                <div className="flex flex-col  xl:pt-10 gap-7 xl-1280:h-[350px]  xl-1366:h-[300px] xl-768:w-full  w-[516px] xl-1024:w-[400px] contentArea xl-1024:h-[300px] h-[250px] xl-768:h-auto xl-768:gap-10 xl-1440:h-[330px] 2xl:h-[390px] ">
+                  <h1 className="tabHeading text-4xl md:text-[40px] md:leading-[66px] lg:text-[60px] fpt-500 text-white font-medium border-b-[8px] border-[#F7E327] ]">
                     {tabs[activeTab].heading}
                     {/* dangerouslySetInnerHTML= {{ __html: tabs[activeTab].heading }} */}
                   </h1>
@@ -204,13 +228,13 @@ const Capabilities = () => {
               >
                 {tabs[activeTab].images.top.map((img, idx) => (
                   <SwiperSlide key={idx}>
-                    <motion.div>
+                    <div>
                       <img
                         src={img}
                         alt=""
                         className="h-full w-full object-cover"
                       />
-                    </motion.div>
+                    </div>
                   </SwiperSlide>
                 ))}
               </Swiper>

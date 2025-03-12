@@ -65,7 +65,7 @@ const BentoHeader = () => {
   return (
     <div className="">
       <div>
-        <LineHead clr="text-white" bclr="red" heading="Our Blog" />
+        <LineHead clr="text-white" bclr="red" heading="News and Blogs" />
       </div>
       <div className="flex md:flex-row flex-col md:gap-0 gap-[30px] items-center justify-between max-w-full overflow-hidden">
         <div className="lg:w-[60%] md:w-[50%] w-full">
@@ -88,10 +88,9 @@ const BentoHeader = () => {
           transition={{ duration: 0.9 }}
         >
           <motion.p className="gradinetText text-[16px] lg:text-[20px] fsans-400">
-            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-            tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrum exercitationem ullam corporis suscipit
-            laboriosam, nisi ut aliquid.
+            Stay updated with the latest trends, developments, and milestones at
+            KSH Infra. From industry insights to project updates, explore how
+            we’re shaping the future of industrial and logistics infrastructure.
           </motion.p>
 
           <motion.div

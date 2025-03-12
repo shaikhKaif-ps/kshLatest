@@ -27,7 +27,7 @@ const Esg = () => {
   return (
     <div className="h-fit">
       <div className="WContainer py-[56px] fix12">
-        <LineHead heading={"Sustainability"} clr="text-[#092241]" />
+        <LineHead heading={"SUSTAINABILITY"} clr="text-[#092241]" />
         <motion.div
           className="lg:flex md:gap-[20px] "
           variants={containerVariants}
@@ -39,7 +39,7 @@ const Esg = () => {
               variants={itemVariants}
               className="text-[#092241] text-3xl md:text-[60px] font-semibold leading-[105%]"
             >
-              Safe Guarding the Nature is part of our DNA.
+              Safe Guarding the Nature is part of our DNA
             </motion.h3>
             <div className="pt-[32px]">
               <motion.h3
@@ -88,7 +88,10 @@ const Esg = () => {
                 Explore More
               </motion.div> */}
 
-              <button className="flex group hover:translate-x-[5px] transition-transform duration-[400ms] items-center justify-center gap-3">
+              <motion.button
+                variants={itemVariants}
+                className="flex pt-[45px] group hover:translate-x-[5px] transition-transform duration-[400ms] items-center justify-center gap-3"
+              >
                 <img
                   src="/buttonarrows/redarico.svg"
                   width={0}
@@ -96,8 +99,8 @@ const Esg = () => {
                   className="h-10 w-10 rotate-45 group-hover:rotate-0 group-hover:scale-[120%] transition-transform duration-300 cursor-pointer"
                   alt="Red Arrow Icon"
                 />
-                <p className="text-[#ffffff] fsans-600">Explore More</p>
-              </button>
+                <p className="text-[#092241] fsans-600">Explore More</p>
+              </motion.button>
             </div>
           </div>
           <div className="hidden lg:w-[60%] md:flex items-center justify-center">

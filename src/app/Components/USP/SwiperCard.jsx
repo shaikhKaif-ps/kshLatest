@@ -1,5 +1,5 @@
-import React from "react";
-
+"use client";
+import { motion } from "framer-motion";
 const SwiperCard = ({ title, icon, content }) => {
   const swcontent = [
     {
@@ -19,19 +19,64 @@ const SwiperCard = ({ title, icon, content }) => {
     },
   ];
   return (
+    // <div className="flex gap-4">
+    //   <div className="flex w-[320px] flex-col bg-[#EEF0F3] justify-between h-[410px] p-[40px]">
+    //     <div className="flex justify-start items-start">
+    //       <img src={icon} alt="Icon" />
+    //     </div>
+    //     <div className="flex flex-col gap-[18px]">
+    //       <h3 className="text-[#092241] fsans-700 text-[22px] leading-[130%]">
+    //         {title}
+    //       </h3>
+    //       <p className="fsans-400 text-[18px] leading-[26px] text-[#6C8DAB]">
+    //         {content}
+    //       </p>
+    //     </div>
+    //   </div>
+    // </div>
+
+    //
+    // <div className="flex gap-4">
+    //   <div className="flex relative group w-[320px] flex-col bg-[#EEF0F3] justify-between h-[410px] p-[40px]">
+    //     <div className="flex relative z-20 justify-start items-start">
+    //       <img className="group-hover:stroke-slate-200" src={icon} alt="Icon" />
+    //     </div>
+    //     <div className="flex relative z-20 flex-col gap-[18px]">
+    //       <h3 className="text-[#092241] transition-all ease-[0.7,0,0.4,1] duration-500 group-hover:text-[#EEF0F3] fsans-700 text-[22px] leading-[130%]">
+    //         {title}
+    //       </h3>
+    //       <p className="fsans-400 group-hover:text-[#EEF0F3] transition-all ease-[0.7,0,0.4,1] duration-500 relative z-20 text-[18px] leading-[26px] text-[#6C8DAB]">
+    //         {content}
+    //       </p>
+    //     </div>
+    //     <div className="absolute h-0 group-hover:h-[410px] bottom-0 w-full bg-[#6C8DAB] transition-all ease-[0.7,0,0.4,1] duration-500 left-0 z-10" />
+    //   </div>
+    // </div>
+    //
     <div className="flex gap-4">
-      <div className="flex w-[320px] flex-col bg-[#EEF0F3] justify-between h-[410px] p-[40px]">
-        <div className="flex justify-start items-start">
-          <img src={icon} alt="Icon" />
+      <div className="flex relative group w-[320px] flex-col bg-[#EEF0F3] justify-between h-[410px] p-[40px]">
+        {/* SVG Icon */}
+        <div className="flex relative z-20 justify-start items-start">
+          <img
+            src={icon}
+            alt="Icon"
+            className="transition-all duration-700 ease-[0.7,0,0.4,1] 
+                   group-hover:invert group-hover:brightness-0 group-hover:contrast-100"
+          />
         </div>
-        <div className="flex flex-col gap-[18px]">
-          <h3 className="text-[#092241] fsans-700 text-[22px] leading-[130%]">
+
+        {/* Text Content */}
+        <div className="flex relative z-20 flex-col gap-[18px]">
+          <h3 className="text-[#092241] transition-all ease-[0.7,0,0.4,1] duration-500 group-hover:text-[#EEF0F3] fsans-700 text-[22px] leading-[130%]">
             {title}
           </h3>
-          <p className="fsans-400 text-[18px] leading-[26px] text-[#6C8DAB]">
+          <p className="fsans-400 group-hover:text-[#EEF0F3] transition-all ease-[0.7,0,0.4,1] duration-500 relative z-20 text-[18px] leading-[26px] text-[#6C8DAB]">
             {content}
           </p>
         </div>
+
+        {/* Expanding Background */}
+        <div className="absolute h-0 group-hover:h-[410px] bottom-0 w-full bg-[#6C8DAB] transition-all ease-[0.7,0,0.4,1] duration-500 left-0 z-10" />
       </div>
     </div>
   );

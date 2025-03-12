@@ -242,8 +242,8 @@ const page = () => {
       <AboutSec2 />
       <AboutVision />
       <AboutOurLeadership />
-      <AboutGrowth />
       <AboutCap />
+      <AboutGrowth />
     </>
   );
 };

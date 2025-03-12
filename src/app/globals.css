@@ -331,7 +331,29 @@ h6:not(.linehead-text) {
 
 /*  */
 
-.cusTomBorder {}
+.animate-slideUp {
+  animation: slideUp 1s ease-out forwards;
+  /* Duration and easing */
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    /* Start from bottom */
+    opacity: 0;
+    /* Make it invisible initially */
+  }
+
+  50% {
+    opacity: 1;
+    /* Make it visible */
+  }
+
+  100% {
+    transform: translateY(0);
+    /* Move it to its original position */
+  }
+}
 
 
 /* Sustainabiliyt */

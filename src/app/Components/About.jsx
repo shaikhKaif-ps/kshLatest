@@ -289,7 +289,7 @@ const About = () => {
               >
                 KSH INFRA is a pioneering developer of Grade A industrial and
                 logistics parks, committed to shaping a sustainable future for
-                India's manufacturing and logistics sectors.
+                India’s manufacturing and logistics sectors.
               </h2>
             </motion.div>
             <motion.div
@@ -305,7 +305,7 @@ const About = () => {
               <p className="flato-400 text-[18px] leading-[26px] text-[#6C8DAB]">
                 Setting benchmarks in delivering
                 <br />
-                transform ative infrastructure.
+                transformative infrastructure.
               </p>
             </motion.div>
             <ButtomComp />

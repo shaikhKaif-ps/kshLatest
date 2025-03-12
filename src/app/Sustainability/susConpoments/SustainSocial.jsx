@@ -72,50 +72,19 @@ const SustainSocial = () => {
                   <div className="md:pt-[38px]  pt-6 xl-768:pt-2 text-[#717171] text-base  fsans-600 ">
                     <ul className="flex flex-col gap-[18px] list-disc">
                       <li>
-                        Advanced waste management technology and systems to
-                        negate any negative effect on the surroundings.
+                        Advanced waste management systems to minimize
+                        environmental impact and maintain cleanliness in
+                        surrounding areas
                       </li>
                       <li>
-                        Encouraging rain water harvesting and water recycling
-                        with STP.
+                        Rainwater harvesting and water recycling to promote
+                        sustainable water use and support local water
+                        conservation efforts.
                       </li>
                       <li>
-                        Option of installing solar energy systems at all
-                        industrial and logistics parks, reducing dependency on
-                        the national power grid.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className=" xl-1280:w-[1000px] xl-1024:w-[800px] md:w-[1071px] md:h-[450px] xl-768:h-auto  md:flex">
-                <div className="imgCon xl-768:w-[300px] w-[495px] bg-red-400 flex">
-                  <img
-                    src="/Sustainability/social1.png"
-                    className="w-full"
-                    alt="Social Impact"
-                  />
-                </div>
-                <div className=" contentCon bg-white xl-768:w-[400px] md:w-[576px] xl-1024:py-10 xl-768:py-4 md:py-24 py-12 px-9 md:px-11">
-                  <h1 className="text-[#092241] text-[22px] fsans-700">
-                    POSITIVE COMMUNITY ENGAGEMENT
-                  </h1>
-                  <div className="md:pt-[38px]  pt-6 xl-768:pt-2 text-[#717171] text-base  fsans-600 ">
-                    <ul className="flex flex-col gap-[18px] list-disc">
-                      <li>
-                        Advanced waste management technology and systems to
-                        negate any negative effect on the surroundings.
-                      </li>
-                      <li>
-                        Encouraging rain water harvesting and water recycling
-                        with STP.
-                      </li>
-                      <li>
-                        Option of installing solar energy systems at all
-                        industrial and logistics parks, reducing dependency on
-                        the national power grid.
+                        Stormwater drainage systems to prevent flooding,
+                        ensuring safer conditions for both our parks and
+                        neighboring communities.
                       </li>
                     </ul>
                   </div>
@@ -133,22 +102,48 @@ const SustainSocial = () => {
                 </div>
                 <div className=" contentCon bg-white xl-768:w-[400px] md:w-[576px] xl-1024:py-10 xl-768:py-4 md:py-24 py-12 px-9 md:px-11">
                   <h1 className="text-[#092241] text-[22px] fsans-700">
-                    POSITIVE COMMUNITY ENGAGEMENT
+                    EMPLOYEE WELL-BEING
                   </h1>
                   <div className="md:pt-[38px]  pt-6 xl-768:pt-2 text-[#717171] text-base  fsans-600 ">
                     <ul className="flex flex-col gap-[18px] list-disc">
                       <li>
-                        Advanced waste management technology and systems to
-                        negate any negative effect on the surroundings.
+                        Improved accessibility and personnel amenities to create
+                        a better, more comfortable experience for employees and
+                        visitors.
                       </li>
                       <li>
-                        Encouraging rain water harvesting and water recycling
-                        with STP.
+                        Sustainable infrastructure designed to enhance workplace
+                        safety, efficiency, and overall employee satisfaction.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className=" xl-1280:w-[1000px] xl-1024:w-[800px] md:w-[1071px] md:h-[450px] xl-768:h-auto  md:flex">
+                <div className="imgCon xl-768:w-[300px] w-[495px] bg-red-400 flex">
+                  <img
+                    src="/Sustainability/social1.png"
+                    className="w-full"
+                    alt="Social Impact"
+                  />
+                </div>
+                <div className=" contentCon bg-white xl-768:w-[400px] md:w-[576px] xl-1024:py-10 xl-768:py-4 md:py-24 py-12 px-9 md:px-11">
+                  <h1 className="text-[#092241] text-[22px] fsans-700">
+                    ENVIRONMENTAL & OPERATIONAL RESPONSIBILITY
+                  </h1>
+                  <div className="md:pt-[38px]  pt-6 xl-768:pt-2 text-[#717171] text-base  fsans-600 ">
+                    <ul className="flex flex-col gap-[18px] list-disc">
+                      <li>
+                        Solar energy system options at all industrial and
+                        logistics parks to reduce reliance on the national power
+                        grid.
                       </li>
                       <li>
-                        Option of installing solar energy systems at all
-                        industrial and logistics parks, reducing dependency on
-                        the national power grid.
+                        Sustainable development practices integrated into all
+                        future projects, ensuring long-term environmental
+                        responsibility.
                       </li>
                     </ul>
                   </div>

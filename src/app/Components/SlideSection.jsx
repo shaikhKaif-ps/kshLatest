@@ -2,11 +2,43 @@
 import { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { motion, AnimatePresence } from "framer-motion";
+
 import "swiper/css";
+import "swiper/css/free-mode";
 import "swiper/css/navigation";
+import "swiper/css/thumbs";
+import "swiper/css/effect-creative";
+import "swiper/css/effect-fade";
+
+import { Autoplay, EffectCreative } from "swiper/modules";
 const SlideSection = () => {
-  const tabs = ["Growth", "Culture", "Opportunities"];
   const [activeIndex, setActiveIndex] = useState(0);
+  // const tabs = ["Growth", "Culture", "Opportunities"];
+
+  const tabsData = [
+    {
+      title: "Growth",
+      description:
+        "At KSH Infra, we invest in your success. With structured career paths, mentorship programs, and skill-building opportunities, we ensure that every team member has the tools to grow and excel.",
+      image: "/Slideimgs/Growth.png",
+      middleImage: "/Slideimgs/Growth-middle.png",
+    },
+    {
+      title: "Culture",
+      description:
+        "We foster a workplace built on collaboration, inclusivity, and innovation. Our dynamic environment encourages creativity, teamwork, and a strong sense of belonging, making KSH Infra a great place to work.",
+      image: "/Slideimgs/Culture.png",
+      middleImage: "/Slideimgs/Culture-middle.png",
+    },
+    {
+      title: "Opportunities",
+      description:
+        "Explore exciting career opportunities with KSH Infra. Whether you’re an experienced professional or just starting, we offer roles that align with your ambitions and skills, helping you build a rewarding career.",
+      image: "/Slideimgs/Opportunities.png",
+      middleImage: "/Slideimgs/Opportunities-middle.png",
+    },
+  ];
+
   const swiperRef = useRef(null);
   // Handle tab click (updates both tab and slide)
   const handleTabClick = (index) => {
@@ -19,7 +51,7 @@ const SlideSection = () => {
   };
   // Handle navigation
   const handleNext = () => {
-    if (swiperRef.current && activeIndex < tabs.length - 1) {
+    if (swiperRef.current && activeIndex < tabsData.length - 1) {
       setActiveIndex(activeIndex + 1);
       swiperRef.current.slideNext();
     }
@@ -48,19 +80,20 @@ const SlideSection = () => {
             </h1>
             {/* Tabs */}
             <div className="tabs flex gap-4">
-              {tabs.map((tab, index) => (
-                <button
-                  key={tab}
-                  className={`px-3 h-[46px] border-[#D7D7D7] border-opacity-50 border-[2px] text-white rounded-[10px] ${
-                    activeIndex === index
-                      ? "bg-red-700 border-red-700"
-                      : "bg-transparent"
-                  }`}
-                  onClick={() => handleTabClick(index)}
-                >
-                  {tab}
-                </button>
-              ))}
+              {tabsData &&
+                tabsData.map((tab, index) => (
+                  <button
+                    key={tab.title}
+                    className={`px-3 h-[46px] border-[#D7D7D7] border-opacity-50 border-[2px] text-white rounded-[10px] ${
+                      activeIndex === index
+                        ? "bg-red-700 border-red-700"
+                        : "bg-transparent"
+                    }`}
+                    onClick={() => handleTabClick(index)}
+                  >
+                    {tab.title}
+                  </button>
+                ))}
             </div>
           </div>
 
@@ -72,17 +105,14 @@ const SlideSection = () => {
                 initial={{ x: 500, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 exit={{ x: -500, opacity: 0 }}
-                transition={{ duration: 0.6, ease: [0.7, 0, 0.4, 1] }}
+                transition={{ duration: 0.7, ease: [0.7, 0, 0.4, 1] }}
                 className="text-white" // Removed "absolute"
               >
                 <h1 className="text-3xl md:text-6xl font-medium border-b-[8px] border-[#F7E327] w-fit pb-3 pt-16">
-                  {tabs[activeIndex]}
+                  {tabsData && tabsData[activeIndex].title}
                 </h1>
                 <p className="md:w-[60%] max-w-full md:mx-0 mx-auto pt-6 md:pt-12 md:pb-12 text-base text-[#6C8DAB]">
-                  Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
-                  eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut
-                  enim ad minim veniam, quis nostrum exercitationem ullam
-                  corporis suscipit.
+                  {tabsData && tabsData[activeIndex].description}
                 </p>
               </motion.div>
             </AnimatePresence>
@@ -90,14 +120,6 @@ const SlideSection = () => {
 
           {/* Navigation Buttons */}
           <div className="flex items-center pt-[45px] px-[5%] md:px-0 md:w-[60%] justify-between pb-[70px]">
-            {/* <div className="flex items-center gap-4 text-[#fff] text-[16px] group hover:translate-x-[5px] transition-transform duration-[400ms] cursor-pointer">
-              <img
-                src="/buttonarrows/redarico.svg"
-                className="group-hover:rotate-0 group-hover:scale-[120%] transition-transform duration-[400ms] ease-in-out  h-10 w-10 rotate-45 hover:rotate-0 cursor-pointer"
-                alt=""
-              />
-              Explore Careers
-            </div> */}
             <button className="flex group hover:translate-x-[5px] transition-transform duration-[400ms] items-center justify-center gap-3">
               <img
                 src="/buttonarrows/redarico.svg"
@@ -118,12 +140,12 @@ const SlideSection = () => {
                 <img className="h-10 w-10" src="/landingr.svg" alt="" />
               </button>
               <div className="text-base text-[#6C8DAB]">
-                {activeIndex + 1} / {tabs.length}
+                {activeIndex + 1} / {tabsData.length}
               </div>
               <button
                 className="w-10 h-10 flex items-center justify-center disabled:opacity-50"
                 onClick={handleNext}
-                disabled={activeIndex === tabs.length - 1}
+                disabled={activeIndex === tabsData.length - 1}
               >
                 <img className="h-10 w-10" src="/landingl.svg" alt="" />
               </button>
@@ -133,11 +155,17 @@ const SlideSection = () => {
 
         {/* Middle Section (Dynamic Image) */}
         <div className="middleSection w-[205px] left-[52%] z-10 h-full absolute lg:inline-block hidden">
-          <img
-            src={`/Slideimgs/${tabs[activeIndex]}-middle.png`}
-            alt={tabs[activeIndex]}
-            className="w-full h-auto transition-opacity duration-500 ease-in-out object-cover mt-[125%]"
-          />
+          <motion.div className="bg-red-600 w-full h-fit">
+            <motion.img
+              key={tabsData && tabsData[activeIndex].middleImage}
+              initial={{ y: 10 }}
+              whileInView={{ y: 0 }}
+              transition={{ duration: 0.2 }}
+              // exit={{ y: -100 }}
+              src={tabsData && tabsData[activeIndex].middleImage}
+              className="w-full h-auto transition-opacity duration-500 ease-in-out object-cover mt-[125%]"
+            />
+          </motion.div>
         </div>
 
         {/* Right Section (Swiper) */}
@@ -145,16 +173,35 @@ const SlideSection = () => {
           <Swiper
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+            effect={"creative"}
+            creativeEffect={{
+              prev: {
+                shadow: true,
+                translate: [0, 0, -400],
+              },
+              next: {
+                translate: ["100%", 0, 0],
+              },
+            }}
+            speed={1000}
+            modules={[EffectCreative, Autoplay]}
+            className="mySwiper"
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
           >
-            {tabs.map((tab) => (
-              <SwiperSlide key={tab}>
-                <img
-                  src={`/Slideimgs/${tab}.png`}
-                  alt={tab}
-                  className="max-w-none w-full xl-1440:w-auto xl-1366:w-auto xl-1280:w-auto xl-1024:w-auto"
-                />
-              </SwiperSlide>
-            ))}
+            {tabsData &&
+              tabsData.map((tab) => (
+                <SwiperSlide key={tab.title}>
+                  <img
+                    // src={`/Slideimgs/${tab.image}.png`}
+                    src={tab.image}
+                    alt={tab}
+                    className="max-w-none w-full xl-1440:w-auto xl-1366:w-auto xl-1280:w-auto xl-1024:w-auto"
+                  />
+                </SwiperSlide>
+              ))}
           </Swiper>
         </div>
       </div>
@@ -162,4 +209,3 @@ const SlideSection = () => {
   );
 };
 export default SlideSection;
-// xl-1440:pl-[90px] xl-1536:pl-[138px] xl-1600:pl-[170px]

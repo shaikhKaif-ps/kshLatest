@@ -16,7 +16,7 @@ const AboutCap = () => {
       content:
         "The KSH Container Depot, located in Talegaon, is spread over 17 acres at a vital convergence point of NH4 and the Mumbai-Pune Expressway.",
       images: {
-        top: ["./AboutPage/aboutSlide/ab1.jpg"],
+        top: ["./AboutPage/aboutSlide/KshINTL.png"],
       },
       links: "www.kshdistriparks.com",
     },
@@ -26,7 +26,7 @@ const AboutCap = () => {
       content:
         "KSH has over half a million square feet of warehousing across key Indian markets. The facilities are plug-and-play, effectively and efficiently adaptive to all our clients' needs.",
       images: {
-        top: ["./AboutPage/aboutSlide/ab1.jpg"],
+        top: ["./AboutPage/aboutSlide/KshINTL.png"],
       },
       links: "www.kshlogistics.com",
     },
@@ -37,7 +37,7 @@ const AboutCap = () => {
       content:
         "KSH International is a leading manufacturer of Bare and Insulated Rectangular & Round Winding wires and Transposed Cables in India.",
       images: {
-        top: ["./AboutPage/aboutSlide/ab1.jpg"],
+        top: ["./AboutPage/aboutSlide/KshINTL.png"],
       },
       links: "www.kshinternational.com",
     },
@@ -77,8 +77,9 @@ const AboutCap = () => {
   return (
     <div className="bg-[#092241] ">
       <div className="bg-[#092241] md:h-auto h-fit flex items-end justify-end ">
-        <div className="border-white w-full  maxTab xl-1024:ml-[44px] xl-1280:ml-[59px] xl-1366:ml-[60px] xl-1440:ml-[90px] xl-1536:ml-[137px] xl-1600:ml-[175px] xl-1920:ml-[17.5%]  lg:pb-0 pb-[100px] lg:gap-0 gap-[50px] flex lg:flex-row flex-col overflow-hidden">
-          <div className="leftCon flex-1 md:max-h-[600px] ">
+        {/* <div className="border-white w-full  maxTab xl-1024:ml-[44px] xl-1280:ml-[59px] xl-1366:ml-[60px] xl-1440:ml-[90px] xl-1536:ml-[137px] xl-1600:ml-[175px] xl-1920:ml-[17.5%]  lg:pb-0 pb-[100px] lg:gap-0 gap-[50px] flex lg:flex-row flex-col overflow-hidden"> */}
+        <div className="border-white w-full  ml-[max(5%,calc((100vw-1250px)/2))]  lg:pb-0 pb-[100px] lg:gap-0 gap-[50px] flex lg:flex-row flex-col overflow-hidden">
+          <div className="leftCon flex-1  md:max-h-[600px] ">
             <div className="pt-[66px]">
               <LineHead
                 heading="Our Group Companies"
@@ -112,10 +113,10 @@ const AboutCap = () => {
                 animate={{ x: 0, opacity: 1 }}
                 // exit={{ x: -1000, opacity: 0 }}
                 transition={{ duration: 0.6, ease: [0.7, 0, 0.4, 1] }}
-                className="md:w-[516px] xl-1024:w-[400px] contentArea"
+                className="w-[90%]  xl:w-[516px] xl-1024:w-[400px] contentArea"
               >
                 <div className="flex flex-col  md:h-[240px]">
-                  <h1 className="text-3xl pt-[57px] pb-4 text-white fpt-500">
+                  <h1 className="text-3xl xl-1024:text-[25px] xl-1024:[30px] pt-7 md:pt-[57px] pb-4 text-white fpt-500">
                     {tabs[activeTab].heading}
                   </h1>
                   <p className="tabContent text-lg text-[#C1C1C1]  ">
@@ -126,7 +127,7 @@ const AboutCap = () => {
             </div>
 
             {/* Navigation Buttons */}
-            <div className="flex flex-col gap-7 pt-12 xl:w-[60%] xl-1280:w-[80%] xl-1024:w-[90%] xl-1440:w-[90%] md:w-[70%] w-[100%] justify-between">
+            <div className="flex flex-col gap-7 pt-12 xl-1024:pt-20 xl:w-[60%] xl-1280:w-[80%] xl-1024:w-[90%] xl-1440:w-[90%] md:w-[70%] w-[100%] justify-between">
               <div className="flex items-center gap-2">
                 <h1 className="text-base text-[#fff]">FIND OUT MORE :</h1>{" "}
                 <span className="text-[#F7E327] text-base">

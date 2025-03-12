@@ -460,24 +460,54 @@ const Usp = () => {
 
   const swcontent = [
     {
-      title: "Positioned at a prime location seamless connectivity",
+      title: "Strategic Locations for Business Growth",
       icon: "/uspicons/icon1.svg",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisci elit.",
+      content: "Positioned near major hubs for efficiency and savings.",
     },
     {
-      title: "Equipped with modern warehousing facilities",
+      title: "Customizable Facilities for Every Need",
       icon: "/uspicons/icon2.svg",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisci elit.",
+      content: "Offers ‘Build-to-Suit’ and ‘Ready-to-Move’ options.",
     },
     {
-      title: "Offers competitive pricing models and eco-friendly operations",
+      title: "Ready-to-Move Facilities Available",
       icon: "/uspicons/icon4.svg",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisci elit.",
+      content: "Pre-built, equipped spaces for immediate occupancy.",
     },
     {
-      title: "Positioned at a prime location seamless connectivity",
+      title: "Commitment to Sustainable Practices",
       icon: "/uspicons/icon1.svg",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisci elit.",
+      content: "Features solar power and Miyawaki green areas.",
+    },
+    {
+      title: "Comprehensive Security Measures",
+      icon: "/uspicons/icon1.svg",
+      content: "Utilizes drones and traditional measures for safety.",
+    },
+    {
+      title: "Advanced Emergency Preparedness",
+      icon: "/uspicons/icon1.svg",
+      content: "Quick response teams and medical services on-site.",
+    },
+    {
+      title: "Active Community Engagement",
+      icon: "/uspicons/icon1.svg",
+      content: "Hosts events and provides spaces for wellness.",
+    },
+    {
+      title: "Streamlined Transportation and Logistics",
+      icon: "/uspicons/icon1.svg",
+      content: "Supports efficient transport with smart docking.",
+    },
+    {
+      title: "Innovative Facility Management Systems",
+      icon: "/uspicons/icon1.svg",
+      content: "Uses mobile apps for dynamic facility oversight.",
+    },
+    {
+      title: "Smart Energy and Resource Management",
+      icon: "/uspicons/icon1.svg",
+      content: "Employs technology to minimize energy costs.",
     },
   ];
 
@@ -501,10 +531,9 @@ const Usp = () => {
             {/* Text & Navigation Buttons */}
             <motion.div className="flex sm:flex-row flex-col sm:items-center items-start justify-start gap-[20px] sm:gap-[92px] w-full sm:w-[90%] sm:mx-auto xl:w-auto xl-1024:mr-[50px] xl-1280:mr-[59px] xl-1366:mr-[55px] xl-1600:mr-[171px] xl-1536:mr-[145px] xl-1440:mr-[90px] xl-1920:mr-[29%]">
               <p className="fsans-400 text-[18px] leading-[26px] text-[#6C8DAB] z-[1]">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
-                aliquid quas sapiente quaerat eligendi voluptatum necessitatibus
-                natus, incidunt ipsa ipsum, sequi enim asperiores dolorum.
-                Nobis, numquam totam! Ipsam, numquam facilis!
+                KSH INFRA is dedicated to providing solutions that not only meet
+                but adapt to the evolving demands of industries, ensuring our
+                clients achieve their business objectives with utmost efficacy.
               </p>
               <div className="flex gap-[14px] items-center justify-center">
                 <button id="arrowleft" className="h-[41px] w-[41px]">

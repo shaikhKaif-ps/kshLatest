@@ -14,13 +14,13 @@ const SustainGovernence = () => {
     {
       title: "Safety",
       content:
-        "Our sustainability policies drive responsible business practices and ensure environmental and social compliance in all operations.",
+        "Not only do KSH INFRA parks offer the best-in-class amenities, they also ensure that the safety protocols and facilities are given the highest priority. Safety is integral to our operations, and this enables us to deliver reliable, compliant and sustainable infrastructure",
       image: "Sustainability/SustainabilitySafety.png",
     },
     {
       title: "Value Creation",
       content:
-        "We follow best-in-class corporate governance policies to uphold transparency, accountability, and ethical decision-making.",
+        "We create value for society and our stakeholders through numerous channels, such as employment opportunities, tax payment assistance, supply chain participation and investment in local communities.",
       image: "Sustainability/SustainabilityValueCreation.png",
     },
   ];

@@ -15,7 +15,7 @@ const ParkInsideSlider = () => {
             </h1>
           </div>
 
-          <div className="">
+          <div className="bg-red-400 h-5">
             <div className="navSlider"></div>
             <div className="slideSlider"></div>
           </div>

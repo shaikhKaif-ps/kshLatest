@@ -12,14 +12,14 @@ import SustainDownload2 from "./susConpoments/SustainDownload2";
 const page = () => {
   return (
     <div>
-      <SustainSpotLigth />
+      {/* <SustainSpotLigth />
       <SustainSec2 />
       <SustainDownload />
       <SustainDownload2 />
-      <SustainSocial />
+      <SustainSocial /> */}
       <SustainEnviroment />
       {/* <Usp /> */}
-      <SustainGovernence />
+      {/* <SustainGovernence /> */}
     </div>
   );
 };

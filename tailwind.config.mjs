@@ -16,6 +16,7 @@ export default {
         "xl-1536": { min: "1536px", max: "1599px" },
         "xl-1600": { min: "1600px", max: "1919px" },
         "xl-1920": { min: "1920px" },
+        "min-768": { min: "768px" },
         "min-1024": { min: "1024px" },
         "min-1280": { min: "1280px" },
         "min-1366": { min: "1366px" },

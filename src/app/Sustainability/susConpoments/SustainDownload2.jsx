@@ -8,10 +8,10 @@ const SustainDownload2 = () => {
   const tabs = [
     {
       id: 1,
-      heading: "IGBC Certification",
+      heading: "IGBC-PLATINUM CERTIFICATION",
       title: "IGBC",
       content:
-        "IGBC certification ensures eco-friendly construction and promotes sustainability in the real estate sector.",
+        "The vision of the Indian Green Building Council (IGBC)—a part of the Confederation of Indian Industry (CII)—is to enable a sustainably built environment for all. KSH INFRA Chakan Park II Industrial park is going through a stringent process of innovation and improvement to achieve IGBC Platinum certification, the recognized standard of green infrastructure.",
       image: "./Sustainability/sustainDowloadLSlides/IGBC.png",
     },
     {
